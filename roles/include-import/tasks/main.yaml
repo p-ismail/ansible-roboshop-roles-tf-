@@ -1,0 +1,5 @@
+- name: call common role
+  ansible.builtin.import_role:
+    name: commom
+    tasks_from: include-vs-import.yaml
+  when: os == "redhat"
